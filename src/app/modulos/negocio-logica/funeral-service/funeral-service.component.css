@@ -1,0 +1,15 @@
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.large-checkbox {
+  transform: scale(1.5); /* Ajusta el tamaño del checkbox */
+  margin-right: 10px; /* Espacio adicional opcional a la derecha */
+  color: rgb(2, 249, 117);
+}

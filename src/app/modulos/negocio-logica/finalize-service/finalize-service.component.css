@@ -1,0 +1,11 @@
+/* finalize-service.component.css */
+
+.finalize-service-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn {
+  font-size: 1.5em;
+  padding: 10px 20px;
+}

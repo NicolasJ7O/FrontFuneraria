@@ -1,0 +1,29 @@
+
+<form (ngSubmit)="onSubmit()" [formGroup]="funeralForm">
+  <div class="form-group">
+    <label for="beneficiaryId">ID del Beneficiario:</label>
+    <input type="number" id="beneficiaryId" formControlName="beneficiaryId" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="location">ID de la Ciudad:</label>
+    <input type="number" id="location" formControlName="location" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="entryDateTime">Fecha y hora de entrada:</label>
+    <input type="datetime-local" id="entryDateTime" formControlName="entryDateTime" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="exitDateTime">Fecha y hora de salida:</label>
+    <input type="datetime-local" id="exitDateTime" formControlName="exitDateTime" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="traditionalBurial">¿Servicio de velación tradicional?</label>
+    <input class="large-checkbox" type="checkbox" id="traditionalBurial" formControlName="traditionalBurial">
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="funeralForm.invalid">Procesar Servicio Funerario</button>
+</form>
